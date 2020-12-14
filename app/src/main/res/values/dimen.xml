@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_page_heading">20sp</dimen>
+    <dimen name="size_normal_text">14sp</dimen>
+    <dimen name="size_modal_text">16sp</dimen>
+    <dimen name="size_item_of_list_text">16sp</dimen>
+    <dimen name="size_menu_item_text">14sp</dimen>
+    <dimen name="size_button_text">14sp</dimen>
+    <dimen name="size_input_text">16sp</dimen>
+    <dimen name="size_error_text">12sp</dimen>
+</resources>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ZNO_project</string>
+    <string name="welcome_text">Ласкаво просимо до \n <b>ZNO Learn</b></string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="foreget_password">Забули пароль? <b><i><u>Відновити!</u></i></b> </string>
+    <string name="login">Увійти</string>
+    <string name="or">АБО</string>
+    <string name="login_with">Увійти за допомогою:</string>
+    <string name="create_acc">Немає аккаунту? <b><i><u>Створити!</u></i></b></string>
 </resources>

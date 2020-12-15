@@ -8,4 +8,5 @@
     <dimen name="size_button_text">14sp</dimen>
     <dimen name="size_input_text">16sp</dimen>
     <dimen name="size_error_text">12sp</dimen>
+    <dimen name="size_welcome_text">26sp</dimen>
 </resources>

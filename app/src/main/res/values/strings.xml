@@ -8,4 +8,10 @@
     <string name="or">АБО</string>
     <string name="login_with">Увійти за допомогою:</string>
     <string name="create_acc">Немає аккаунту? <b><i><u>Створити!</u></i></b></string>
+    <string name="password_repeat">Повторіть пароль</string>
+    <string name="register">Створити</string>
+    <string name="register_with">Зареєструватися за допомогою:</string>
+    <string name="licence_register">Продовжуючи Ви приймаєте <b><i><u>Умови Користування</u></i></b></string>
+    <string name="tv_create_acc">Створіть аккаунт</string>
+    <string name="name_nickname">Ім’я / Нікнейм</string>
 </resources>

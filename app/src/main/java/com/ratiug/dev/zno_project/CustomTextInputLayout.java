@@ -3,6 +3,7 @@ package com.ratiug.dev.zno_project;
 import android.content.Context;
 import android.graphics.ColorFilter;
 import android.util.AttributeSet;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.core.graphics.drawable.DrawableCompat;
@@ -27,6 +28,14 @@ public class CustomTextInputLayout extends TextInputLayout {
         ColorFilter defaultColorFilter = getBackgroundDefaultColorFilter();
         super.setError(error);
         //Reset EditText's background color to default.
+        View layout = getChildAt(1);
+        if (layout != null) {
+            if (error != null && !"".equals(error.toString().trim())) {
+                layout.setVisibility(VISIBLE);
+            } else {
+                layout.setVisibility(GONE);
+            }
+        }
         updateBackgroundColorFilter(defaultColorFilter);
     }
 

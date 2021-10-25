@@ -1,2 +1,11 @@
 include ':app'
 rootProject.name = "ZNO_project"
+include ':features:feature_signin'
+include ':features:feature_registration'
+include ':features:feature_home'
+include ':features:feature_subject_list'
+include ':features:feature_subject_actions'
+include ':features:feature_subject_theory_list'
+include ':features:feature_subject_test_list'
+include ':features:feature_subject_zno_list'
+include ':core'

@@ -1,8 +1,7 @@
-package com.ratiug.dev.zno_project.activities
+package com.ratiug.feature_registration
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ratiug.dev.zno_project.R
 
 class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorViolet"
+    android:fillViewport="true"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_create_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_create_acc"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_page_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_pick_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_create_acc" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_input_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_pick_image">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="@string/name_nickname"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_menu_item_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ratiug.core_ui.custom_view.CustomTextInputLayout
+            android:id="@+id/etNameLayout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_nickname"
+           >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_name_nickname"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="textEmailAddress"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_input_text" />
+        </com.ratiug.core_ui.custom_view.CustomTextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/e_mail"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_menu_item_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etNameLayout" />
+
+        <com.ratiug.core_ui.custom_view.CustomTextInputLayout
+            android:id="@+id/etEmailLayout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_email">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_email"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="textEmailAddress"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_input_text" />
+        </com.ratiug.core_ui.custom_view.CustomTextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/password"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_menu_item_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etEmailLayout" />
+
+
+        <com.ratiug.core_ui.custom_view.CustomTextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="textPassword"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_input_text" />
+        </com.ratiug.core_ui.custom_view.CustomTextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_password_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/password_repeat"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_menu_item_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPasswordLayout" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayoutRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_password_repeat"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password_repeat"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="textPassword"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_input_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_register"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_edit_text"
+        android:backgroundTint="@color/colorPink"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/or"
+        app:layout_constraintTop_toBottomOf="@id/cl_input_form" />
+
+
+    <View
+        android:id="@+id/line_one"
+        android:layout_width="170dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@id/im_fb"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line_two"
+        android:layout_width="170dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@id/im_fb"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_normal_text"
+        app:layout_constraintBottom_toBottomOf="@id/line_one"
+        app:layout_constraintEnd_toStartOf="@id/line_two"
+        app:layout_constraintStart_toEndOf="@id/line_one"
+        app:layout_constraintTop_toTopOf="@id/line_one" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_licence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/licence_register"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_error_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/im_google"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/selector_button_google"
+        app:layout_constraintBottom_toTopOf="@id/tv_licence"
+        app:layout_constraintEnd_toStartOf="@id/or" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/im_fb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/selector_button_facebook"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/tv_licence"
+        app:layout_constraintStart_toEndOf="@id/or" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

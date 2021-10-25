@@ -2,4 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ratiug.feature_registration">
 
+    <application>
+        <activity android:name=".RegistrationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+
+        </activity>
+    </application>
 </manifest>

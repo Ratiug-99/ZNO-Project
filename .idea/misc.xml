@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Evhen/AndroidStudioProjects/ZNO-Project/app/src/main/res/layout/activity_registration.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Evhen/AndroidStudioProjects/ZNO-Project/features/feature_registration/src/main/res/layout/activity_main.xml" value="0.3572916666666667" />
+        <entry key="..\:/Users/Evhen/AndroidStudioProjects/ZNO-Project/features/feature_registration/src/main/res/layout/activity_registration.xml" value="0.22" />
+        <entry key="..\:/Users/Evhen/AndroidStudioProjects/ZNO-Project/features/feature_signin/src/main/res/layout/activity_login.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
